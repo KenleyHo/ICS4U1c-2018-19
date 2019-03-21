@@ -8,8 +8,8 @@ def get_area(rec):
 
 def main():
     rec1 = Rectangle() #instance
-    rec1.height = int(input())
-    rec1.width = int(input())
+    rec1.height = int(input("Enter a width: "))
+    rec1.width = int(input("Enter a height: "))
     print(get_area(rec1))
 
 main()
