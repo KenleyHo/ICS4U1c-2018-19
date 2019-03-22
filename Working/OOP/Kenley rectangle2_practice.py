@@ -1,24 +1,18 @@
 class Rectangle():
 
-    def __init__(self):
-        self.width = 0
-        self.length = 0
+    def __init__(self, width, length):
+        self.width = width
+        self.length = length
 
     def get_area(self):
         return self.width * self.length
 
 def main():
-    rec1 = Rectangle()
-    rec1.width = 2
-    rec1.length = 4
+    rec1 = Rectangle(2, 4)
     print("The area of the rectangle is " + str(rec1.get_area()))
-    rec2 = Rectangle()
-    rec2.width = 7
-    rec2.length = 19
+    rec2 = Rectangle(7, 19)
     print("The area of the rectangle is " + str(rec2.get_area()))
-    rec3 = Rectangle()
-    rec3.width = 8
-    rec3.length = 17
+    rec3 = Rectangle(8, 17)
     print("The area of the rectangle is " + str(rec3.get_area()))
 
 main()

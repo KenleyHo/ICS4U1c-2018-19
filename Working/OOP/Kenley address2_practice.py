@@ -8,11 +8,11 @@ class Address():
         self.postalcode = ""
         self.country = "Canada"
 
-    def print_address():
+    def print_address(self):
         print(self.addressline_1)
         if self.addressline_2 != "":
             print(self.addressline_2)
-        print(self.city + "" + self.province + "" + self.postalcode + "" + self.coutry)
+        print(self.city + " " + self.province + " " + self.postalcode + " " + self.country)
 
 def main():
     my_address = Address()
@@ -22,7 +22,8 @@ def main():
     my_address.province = "Ontario"
     my_address.postalcode = "L3T2K6"
     my_address.country = "Canada"
-    print("My address is: " + my_address.print_address())
+    print("My address is: ")
+    my_address.print_address()
 
 main()
 
